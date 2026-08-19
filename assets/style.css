@@ -14,4 +14,26 @@ body:has(a[href="https://github.com/amanbhala/inverse-modelling"]) .page-head{ba
 .pub{background:#fff;border:1px solid var(--line);border-left:4px solid var(--maroon);padding:16px 18px;margin:12px 0;border-radius:8px;box-shadow:0 3px 12px #1f293705}.pub-title{font-weight:750;font-size:1.03rem}.meta{color:var(--muted);font-size:.9rem;margin-top:3px}.highlight-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.highlight{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px}.highlight h3{margin:.3rem 0 .45rem}.date{font-size:.76rem;text-transform:uppercase;letter-spacing:.1em;color:#7a6870;font-weight:800}.timeline{border-left:2px solid #dbc0cb;margin-left:6px;padding-left:25px}.item{margin-bottom:27px}.item h3{margin:.3rem 0 .35rem}.item p{margin:.35rem 0}.small-links{font-size:.88rem}.list-clean{padding-left:20px}.contact{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px}.text-link{font-weight:700}
 .poster-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:24px}.poster-card{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 7px 22px #1f29370c;display:flex;flex-direction:column}.poster-media{display:block;background:var(--soft);padding:12px;border-bottom:1px solid var(--line)}.poster-media:hover{text-decoration:none}.poster-media img{display:block;width:100%;height:auto;border-radius:6px;background:#fff;box-shadow:0 3px 12px #1f293714;transition:transform .18s ease,box-shadow .18s ease}.poster-media:hover img{transform:translateY(-2px);box-shadow:0 8px 20px #1f29371c}.poster-body{padding:19px 20px 21px;display:flex;flex-direction:column;flex:1}.poster-body h3{margin:.2rem 0 .35rem;line-height:1.35}.poster-body p{margin:.35rem 0}.poster-meta{color:var(--muted);font-size:.9rem}.poster-action{margin-top:auto;padding-top:8px;font-weight:700}
 .footer{border-top:1px solid var(--line);background:#fff;color:var(--muted);text-align:center;padding:28px 20px;font-size:.88rem}.footer-links{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:7px}.footer-links a{color:#4b5660}
-@media(max-width:860px){.grid,.two,.highlight-grid,.poster-grid{grid-template-columns:1fr}.hero-inner{grid-template-columns:1fr;padding-top:58px}.avatar{width:150px;height:150px;order:-1}.hero h1{font-size:2.65rem}.page-head h1{font-size:2.25rem}.nav{align-items:flex-start;flex-direction:column;gap:10px}.navlinks{gap:12px}.navlinks a{font-size:.88rem}body:has(.tag-row > .tag:nth-child(16)) .page-head,body:has(a[href*="citiprogram.org/verify"]) .page-head,body:has(a[href="https://github.com/amanbhala/inverse-modelling"]) .page-head{padding:38px 24px;border-radius:11px;background-position:center center}}
+@media(max-width:860px){
+  .grid,.two,.highlight-grid,.poster-grid{grid-template-columns:1fr}
+  header{position:sticky;top:0;box-shadow:0 2px 14px rgba(24,33,43,.08)}
+  .nav{display:block;padding:8px 0 0;overflow:hidden}
+  .brand{display:block;padding:0 16px 7px;font-size:1.03rem;line-height:1.15;white-space:nowrap}
+  .navlinks{display:flex;flex-wrap:nowrap;gap:0;overflow-x:auto;overflow-y:hidden;padding:0 10px 8px;-webkit-overflow-scrolling:touch;scrollbar-width:none;scroll-snap-type:x proximity;border-top:1px solid #f0e6e9}
+  .navlinks::-webkit-scrollbar{display:none}
+  .navlinks a{flex:0 0 auto;display:block;padding:8px 9px 7px;font-size:.78rem;line-height:1;white-space:nowrap;color:#4a3b42;scroll-snap-align:start;border-bottom:2px solid transparent}
+  .navlinks a:hover,.navlinks a:focus{color:var(--maroon);text-decoration:none;border-bottom-color:var(--maroon)}
+  .hero-inner{grid-template-columns:1fr;padding-top:46px}
+  .avatar{width:142px;height:142px;order:-1}
+  .hero h1{font-size:2.55rem}
+  .page-head h1{font-size:2.18rem}
+  main{padding-top:34px}
+  body:has(.tag-row > .tag:nth-child(16)) .page-head,body:has(a[href*="citiprogram.org/verify"]) .page-head,body:has(a[href="https://github.com/amanbhala/inverse-modelling"]) .page-head{padding:36px 24px;border-radius:11px;background-position:center center}
+}
+@media(max-width:520px){
+  .brand{font-size:.98rem}
+  .navlinks a{font-size:.75rem;padding:8px 8px 7px}
+  .hero-inner{padding:42px 18px 48px;gap:26px}
+  main{padding-left:18px;padding-right:18px}
+  .page-head h1{font-size:2rem}
+}
